@@ -1,0 +1,4 @@
+/sass/
+*.txt
+css/*.map
+*.scss
