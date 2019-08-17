@@ -4,10 +4,10 @@ import { Phone } from './class.js';
 
 window.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".jsDisplay").focus();
-    phone.show();
+  phone.fetchData();
   phone.del();
-  // Phone.fetchData()
+  
+
 });
 const phone = new Phone();
-
 
