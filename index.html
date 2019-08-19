@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0"/>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=0"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://kit.fontawesome.com/1231deda39.js"></script>
     <link rel="stylesheet" href="css/style.css" />
@@ -11,52 +14,100 @@
   <body>
     <div class="container">
       <header class="header">
-        <h1 class="heading-h1">Foreign Calls</h1>
+        
+        <a href="#dial" class="dial tab">Keypad</a>
+        <a href="#contact" class="contact tab">Contacts</a>
       </header>
-      <section class="section">
-          <form action="" class="form">
-              <div class="form-group">
-                  <label for="" class="label countryFlag">
-                      <img src="" class="photo d-none" alt="Country Flag">
-                      
-                  </label>
-                  <input type="tel"  class="form-control jsDisplay"/>
-<div class="popup"></div>
-                </div>
-                <div class="form-group">
-                    
-                    <!-- <a href="#" class="btn">Verif</a> -->
-                </div>
-            </form>
-        </section>
+<!-- input -->
+      <section class="sectionA" id="dial">
+        <form action="" class="form">
+          <div class="form-group">
+            <label for="" class="label countryFlag">
+              <img src="" class="photo d-none" alt="Country Flag" />
+            </label>
+            <input type="tel" class="form-control jsDisplay" />
+            <div class="popup"></div>
+          </div>
+          <div class="form-group">
+          </div>
+        </form>
+<!-- keypad -->
         <section class="section">
-            <div class="pad__group">
-                <div class="pad" data-number="1">1</div>
-                <div class="pad" data-number="2">2</div>
-                <div class="pad" data-number="3">3</div>
-            </div>
-            <div class="pad__group">
-                <div class="pad" data-number="4">4</div>
-                <div class="pad" data-number="5">5</div>
-                <div class="pad" data-number="6">6</div>
-            </div>
-            <div class="pad__group">
-                <div class="pad" data-number="7">7</div>
-                <div class="pad" data-number="8">8</div>
-                <div class="pad" data-number="9">9</div>
-            </div>
-            <div class="pad__group">
-                <div class="pad" data-number="#">#</div>
-                <div class="pad" data-number="0">0 / +</div>
-                <div class="del"></div>
-            </div>
-            <div class="pad__group utility-Center">
-                
-                <div class="padCall dial-btn" ><i class="fas fa-phone-alt"></i></div>
-                
-            </div>
-          
+          <div class="pad__group">
+            <div class="pad" data-number="1">1</div>
+            <div class="pad" data-number="2">2</div>
+            <div class="pad" data-number="3">3</div>
+          </div>
+          <div class="pad__group">
+            <div class="pad" data-number="4">4</div>
+            <div class="pad" data-number="5">5</div>
+            <div class="pad" data-number="6">6</div>
+          </div>
+          <div class="pad__group">
+            <div class="pad" data-number="7">7</div>
+            <div class="pad" data-number="8">8</div>
+            <div class="pad" data-number="9">9</div>
+          </div>
+          <div class="pad__group">
+            <div class="pad" data-number="#">#</div>
+            <div class="pad" data-number="0">0 / +</div>
+            <div class="del"></div>
+          </div>
+          <div class="pad__group utility-Center">
+            <div class="padCall dial-btn"><i class="fas fa-phone-alt"></i></div>
+          </div>
         </section>
+      </section>
+      <!-- Contacts section -->
+      <section class="sectionB" id="contact">
+        <div class="sectionB__contact-list">
+          <form action="" class="searchform" autocomplete="off">
+            <div class="form-group">
+              <input
+                type="text"
+                id="searchContact"
+                class="form-control-search"
+                placeholder="Search"
+              />
+            </div>
+          </form>
+          <ul class="contacts">
+            <li class="head"><h2>A</h2></li>
+            <li class="name">Alita</li>
+            <li class="name">Alex</li>
+            <li class="name">Alberta</li>
+            <li class="name">April</li>
+            <li class="name">Alice</li>
+            <li class="head"><h2>B</h2></li>
+            <li class="name">Brian</li>
+            <li class="name">Betty</li>
+            <li class="name">Brooklynne</li>
+            <li class="head"><h2>C</h2></li>
+            <li class="name">Charlotte</li>
+            <li class="name">colin</li>
+            <li class="name">cooper</li>
+            <li class="name">chelsea</li>
+            <li class="head"><h2>D</h2></li>
+            <li class="name">Dena</li>
+            <li class="name">Daniel</li>
+            <li class="name">Daryl</li>
+            <li class="head"><h2>E</h2></li>
+
+            <li class="name">eleanor</li>
+            <li class="name">elfrida</li>
+            <li class="name">elle</li>
+            <li class="head"><h2>F</h2></li>
+            <li class="name">franklin</li>
+            <li class="name">Frank</li>
+            <li class="name">finn</li>
+            <li class="head"><h2>g</h2></li>
+            <li class="head"><h2>h</h2></li>
+            <li class="head"><h2>i</h2></li>
+            <li class="head"><h2>j</h2></li>
+            <li class="head"><h2>k</h2></li>
+          </ul>
+        </div>
+      </section>
     </div>
     <script src="scripts/app.js" type="module"></script>
   </body>
